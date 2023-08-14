@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-umfs
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-xqst-tenant/nodejs-users/simple-nodejs-app-umfs@sha256:e596cfda7acd4bcf6d2a431837ef39ef92a57fc79adef7101571ce48eba7aa1c
+        name: my-nodejs
+        resources: {}
+status: {}
